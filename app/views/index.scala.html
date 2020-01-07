@@ -1,0 +1,235 @@
+@*
+* This template takes a single argument, a String containing a
+* message to display.
+*@
+@(message: String)
+@*
+* Call the `main` template with two arguments. The first
+* argument is a `String` with the title of the page, the second
+* argument is an `Html` object containing the body of the page.
+*@
+@main("首页") {
+
+	<div class="container" style="width: 1380px">
+		<div class="page-content-wrapper">
+
+			<style>
+					.icon2x {
+						width: 24px;
+						font-size: 20px;
+						min-width: 24px;
+						display: inline-block;
+					}
+
+					.borders {
+						height: 285px;
+						border: 1px solid #333333;
+						border-radius: 10px 10px 10px 10px;
+						margin: 30px 15px 30px 15px;
+						float: left;
+						width: 100%;
+					}
+
+					row .logo {
+						width: 48px;
+						float: left;
+						margin-top: 10px;
+					}
+
+					row .title {
+						height: 36px;
+						position: relative;
+						word-break: break-all;
+						margin-left: 45px;
+					}
+
+					row .name {
+						font-size: 20px;
+						position: absolute;
+						top: 50%;
+						left: 0;
+						transform: translateY(-50%);
+					}
+
+					a.disabled {
+						pointer-events: none;
+						cursor: default;
+						opacity: .65
+					}
+
+					.name1 {
+						font-size: 18px;
+					}
+
+					.platformP {
+						margin-top: 20px;
+					}
+
+					.contentP {
+						height: 80px;
+					}
+
+			</style>
+
+
+			<div class="row-fluid">
+
+
+				<div class="row" style="margin-top: 50px">
+					<div class="col-sm-offset-1 col-sm-2" align="center">
+						<img src="@routes.Assets.at("images/logo.jpg")" style="width: 150px;
+							margin-top: 15px">
+					</div>
+
+					<div class="col-sm-8" >
+						<div style="margin-top: 40px;" >
+							<h1 style="font-size: 35px;
+								margin-left: 200px"><b>绘云生物分析平台</b></h1>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row" style="margin-top: 60px">
+
+					<div class="col-sm-4">
+						<div class="borders">
+							<div style="margin-left: 2em">
+								<div class="title">
+									<h3 class="name"><a href="@routes.ToolController.toOther()?port=9004" >LiveBoost</a>
+									</h3>
+									<h3 class="name name1">慢性肝病风险计算软件</h3>
+								</div>
+								<p class="platformP">平台说明：
+								</p>
+								<p class="contentP"> LiveBoost，本软件用于对肝纤维化和肝硬化的风险评估。</p>
+								<a class="btn btn-primary " href="@routes.ToolController.toOther()?port=9004" >登录</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="borders">
+							<div style="margin-left: 2em" >
+								<div class="title">
+									<h3 class="name"><a href="@routes.ToolController.toOther()?port=9005" >
+										LiveForest</a></h3>
+									<h3 class="name name1">肝纤维化和肝硬化风险计算软件</h3>
+								</div>
+								<p class="platformP">平台说明：
+								</p>
+								<p class="contentP">
+									LiveForest， 本软件用于对肝纤维化和肝硬化的风险评估。与绘云生物的L-酪氨酸和牛磺胆酸测定试剂盒（液相色谱-串联质谱法）配套使用。</p>
+								<a class="btn btn-primary " href="@routes.ToolController.toOther()?port=9005" >登录</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="borders">
+							<div style="margin-left: 2em" >
+								<div class="title">
+									<h3 class="name"><a href="@routes.ToolController.toOther()?port=9005" >
+										LiveFat</a></h3>
+									<h3 class="name name1">肝脂肪变性程度风险计算软件</h3>
+								</div>
+								<p class="platformP">平台说明：
+								</p>
+								<p class="contentP">
+									LiveFat， 本软件用于对肝脂肪变性程度的风险评估。</p>
+								<a class="btn btn-primary " href="@routes.ToolController.toOther()?port=9009" >登录</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="borders">
+							<div style="margin-left: 2em" >
+								<div class="title">
+									<h3 class="name"><a href="@routes.ToolController.toOther()?port=9000" >TMBQ</a></h3>
+									<h3 class="name name1">代谢物批量定量软件</h3>
+								</div>
+								<p class="platformP">平台说明：
+								</p>
+								<p class="contentP">
+									TMBQ， 本软件对UPLC-TQ/MS（Waters, US）测得的多个样本中的多个目标代谢物进行批量预处理、峰提取、校正和定量，输出整合后的浓度值和基本配套信息。
+								</p>
+								<a class="btn btn-primary " href="@routes.ToolController.toOther()?port=9000" >登录</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="borders">
+							<div style="margin-left: 2em" >
+								<div class="title">
+									<h3 class="name"><a href="@routes.ToolController.toOther()?port=9006" >序列生成器 </a></h3>
+									<h3 class="name name1">Live系列软件</h3>
+								</div>
+								<p class="platformP">平台说明：
+								</p>
+								<p class="contentP"> 序列生成器， 本软件对Live Boost和Live Forest桌面端软件进行许可证颁发和管理。
+								</p>
+								<a class="btn btn-primary " href="@routes.ToolController.toOther()?port=9006" >登录</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="borders">
+							<div style="margin-left: 2em" >
+								<div class="title">
+									<h3 class="name"><a href="@routes.ToolController.toOther()?port=9007" >资源管理器 </a></h3>
+									<h3 class="name name1" style="height: 0px"> </h3>
+								</div>
+								<p class="platformP">平台说明：
+								</p>
+								<p class="contentP"> 资源管理器， 本软件用于资源文件的上传，并生成可下载链接。
+								</p>
+								<a class="btn btn-primary " href="@routes.ToolController.toOther()?port=9007" >登录</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="borders">
+							<div style="margin-left: 2em" >
+								<div class="title">
+									<h3 class="name"><a href="@routes.ToolController.toOther()?port=9012" >
+										靶向代谢物组批量定量系统 </a></h3>
+									<h3 class="name name1" style="height: 0px"> </h3>
+								</div>
+								<p class="platformP">平台说明：
+								</p>
+								<p class="contentP"> 靶向代谢物组批量定量系统， 是一个高通量的定制化的靶向代谢物定量平台。
+								</p>
+								<a class="btn btn-primary " href="@routes.ToolController.toOther()?port=9012" >登录</a>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+
+			</div>
+
+
+		</div>
+	</div>
+	<footer>
+
+		<div class="page-footer" style="bottom: 0px;
+			position: fixed;
+			width: 100%">
+			<div class="page-footer-inner" align="center" style="text-align: center;">
+				版权所有2018 深圳市绘云生物科技有限公司 All Rights Reserved
+			</div>
+			<div class="scroll-to-top" style="display: block;">
+				<i class="icon-arrow-up"></i>
+			</div>
+		</div>
+	</footer>
+
+
+}
